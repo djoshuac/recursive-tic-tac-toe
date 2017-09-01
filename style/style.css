@@ -1,0 +1,73 @@
+﻿body
+{
+    background-color: #fcfbe3;
+}
+
+/*Smaller cells*/
+.tic
+{
+    border: 2px dashed lightgrey;
+}
+
+    /*Change the color of the smaller cells when mouse if over them.*/
+    .tic:hover 
+    {
+        background-color: #ffebcd;
+    }
+
+/*bigger cells*/
+.tac
+{
+    border: 5px solid rgb(50, 50, 50);
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border-collapse: collapse;
+}
+
+    /*Erase the borders that are not needed.*/
+    td:first-of-type 
+    {
+        border-left: none;
+        border-top: none;
+    }
+
+    td:nth-of-type(2) 
+    {
+        border-top: none;
+    }
+
+    td:nth-of-type(3) 
+    {
+        border-right: none;
+        border-top: none;
+    }
+
+    tr:nth-of-type(3) td 
+    {
+        border-bottom: none;
+    }
+
+.tic td:first-of-type {
+    margin: 10px;
+}
+
+.tic td:nth-of-type(2) {
+    margin: 10px;
+}
+
+.tic td:nth-of-type(3) {
+    margin: 10px;
+}
+
+.tic tr:nth-of-type(3) td {
+    margin: 10px;
+}
+
+/*ffebcd*/
