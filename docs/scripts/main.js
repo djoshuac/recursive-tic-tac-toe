@@ -20,6 +20,7 @@ window.onload = () => {
 
 function buildGame() {
   let table = document.createElement("table");
+  table.classList.add("miniGame");
 
   for (let i = 0; i < 3; i++) {
     let row = document.createElement("tr");
