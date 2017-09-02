@@ -1,5 +1,6 @@
 window.onload = () => {
   let gameTable = document.getElementById("game");
+  gameTable.classList.add("toe");
 
   for (let i = 0; i < 3; i++) {
     let row = document.createElement("tr");
@@ -8,6 +9,7 @@ window.onload = () => {
       let cell = document.createElement("td");
 
       cell.appendChild(buildGame());
+      cell.classList.add("tac");
 
       row.appendChild(cell);
     }
@@ -25,6 +27,7 @@ function buildGame() {
     for (let j = 0; j < 3; j++) {
       let cell = document.createElement("td")
       cell.innerHTML = "-";
+      cell.classList.add("tic");
       row.appendChild(cell);
     }
 
