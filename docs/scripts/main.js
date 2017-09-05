@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function() {
   let gameTable = document.getElementById("game");
   gameTable.classList.add("toe");
 
