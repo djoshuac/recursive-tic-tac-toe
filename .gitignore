@@ -1,0 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/web-app/dist
+/web-app/tmp
+/web-app/out-tsc
+
+# dependencies
+/web-app/node_modules
+
+# IDEs and editors
+/web-app/.idea
+/web-app/.project
+/web-app/.classpath
+/web-app/.c9/
+*.launch
+/web-app/.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/web-app/.vscode/*
+/web-app/!.vscode/settings.json
+/web-app/!.vscode/tasks.json
+/web-app/!.vscode/launch.json
+/web-app/!.vscode/extensions.json
+
+# misc
+/web-app/.sass-cache
+/web-app/connect.lock
+/web-app/coverage
+/web-app/libpeerconnection.log
+/web-app/npm-debug.log
+/web-app/testem.log
+/web-app/typings
+
+# e2e
+/web-app/e2e/*.js
+/web-app/e2e/*.map
+
+# System Files
+/web-app/.DS_Store
+/web-app/Thumbs.db

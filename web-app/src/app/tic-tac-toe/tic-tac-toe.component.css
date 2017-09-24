@@ -1,0 +1,80 @@
+.game-layer2
+{
+  margin: auto;
+  max-width: 646px;
+  min-width: 646px;
+  height: 646px;
+}
+
+/*Put a margin around the minigames*/
+.game-layer1
+{
+  margin: 10px;
+  width: 192px;
+  min-width: 192px;
+  height: 192px;
+}
+
+/*bigger cells*/
+.layer2
+{
+  border: 5px solid rgb(50, 50, 50);
+  width: 212px;
+  min-width: 212px;
+  height: 212px;
+}
+
+/*Smaller cells*/
+.layer1
+{
+  border: 2px dashed darkgrey;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+}
+/*Change the color of the smaller cells when mouse is over them.*/
+.layer1:hover
+{
+  background-color: #ffebcd;
+}
+
+/*This makes it so there are not duplicate borders.*/
+table
+{
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*Erase the borders that are not needed.*/
+td:first-of-type
+{
+  border-left: none;
+  border-top: none;
+}
+
+td:nth-of-type(2)
+{
+  border-top: none;
+}
+
+td:nth-of-type(3)
+{
+  border-right: none;
+  border-top: none;
+}
+
+/*The arrow is for a direct child relationship. I couldn't get it to work except by doing this.*/
+tr:nth-of-type(3) > td
+{
+  border-bottom: none;
+}
+
+.cell-button {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  width: 5em;
+}
