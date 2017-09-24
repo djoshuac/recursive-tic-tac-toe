@@ -1,0 +1,28 @@
+<ng-container *ngIf="game.layer === 0 || game.victor !== NoOne; then root_layer; else internal_layer"></ng-container>
+
+<ng-template [ngIf]="game.layer === 0 && game.victor === NoOne">
+  <button class="cell-button"
+          (click)="mark()"
+          style="width:100%;height:100%">
+    {{ getPlayerSymbol(game.victor) }}
+  </button>
+</ng-template>
+<ng-template [ngIf]="game.victor !== NoOne">
+  <button class="cell-button"
+          style="width:100%;height:100%">
+    {{ getPlayerSymbol(game.victor) }}
+  </button>
+</ng-template>
+<ng-template [ngIf]="game.layer > 0 && game.victor === NoOne">
+  <table [ngClass]="'game-layer'+game.layer">
+    <tr *ngFor="let row of layout">
+      <td [ngClass]="'layer'+game.layer" *ngFor="let cell of row">
+        <app-tic-tac-toe
+          [gameId]="this.gameId"
+          [location]="this.location.concat([cell])"
+          [game]="this.game.subgames[cell]"
+        ></app-tic-tac-toe>
+      </td>
+    </tr>
+  </table>
+</ng-template>
