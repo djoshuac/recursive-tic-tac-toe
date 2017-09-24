@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Inception
+# Recursive Tic-Tac-Toe
 
 A meta twist on traditional tic-tac-toe.
 
