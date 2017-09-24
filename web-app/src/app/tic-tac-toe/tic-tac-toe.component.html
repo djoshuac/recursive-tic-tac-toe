@@ -1,5 +1,3 @@
-<ng-container *ngIf="game.layer === 0 || game.victor !== NoOne; then root_layer; else internal_layer"></ng-container>
-
 <ng-template [ngIf]="game.layer === 0 && game.victor === NoOne">
   <button class="cell-button"
           (click)="mark()"
