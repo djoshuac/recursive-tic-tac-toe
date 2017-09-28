@@ -19,7 +19,7 @@
 .layer2
 {
   border: 5px solid rgb(50, 50, 50);
-  width: 212px;
+  width: 100%;
   min-width: 212px;
   height: 212px;
 }
@@ -28,7 +28,7 @@
 .layer1
 {
   border: 2px dashed darkgrey;
-  width: 60px;
+  width: 100%;
   min-width: 60px;
   height: 60px;
 }
@@ -102,5 +102,5 @@ tr:nth-of-type(3) > td
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
   margin: 0;
-  width: 5em;
+  width: 100%;
 }
