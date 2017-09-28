@@ -32,11 +32,6 @@
   min-width: 60px;
   height: 60px;
 }
-/*Change the color of the smaller cells when mouse is over them.*/
-.layer1:hover
-{
-  background-color: #ffebcd;
-}
 
 /*This makes it so there are not duplicate borders.*/
 table
@@ -45,6 +40,37 @@ table
   text-align: center;
   vertical-align: middle;
 }
+
+button
+{
+  width: 100%;
+  height: 100%;
+}
+
+/*Signify cell can be played in next*/
+button.canMove
+{
+  background-color: #BBCCFF;
+}
+
+/*Change the color of the smaller cells when mouse is over them.*/
+button.canMove:hover
+{
+  background-color: #ffebcd;
+}
+
+/*Change color of x won cells*/
+button.victor1
+{
+  background-color: red;
+}
+
+/*Change color of x won cells*/
+button.victor2
+{
+  background-color: yellow;
+}
+
 
 /*Erase the borders that are not needed.*/
 td:first-of-type

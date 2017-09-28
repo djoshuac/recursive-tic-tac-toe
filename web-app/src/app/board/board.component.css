@@ -1,0 +1,6 @@
+/*Center the game on the screen*/
+#game
+{
+  width: 100%;
+  height: 20em;
+}

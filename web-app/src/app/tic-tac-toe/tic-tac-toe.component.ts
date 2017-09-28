@@ -29,7 +29,7 @@ export class TicTacToeComponent implements OnInit {
 
   constructor(private gameStorageService: GameStorageService,
               private ticTacToeService: TicTacToeService) {
-    if (isNullOrUndefined(this.game)) {
+    if (isNullOrUndefined(this.gameId)) {
       this.gameId = gameStorageService.createTicTacToeInceptionGame();
       this.game = gameStorageService.getGame(this.gameId).ticTacToe;
     }

@@ -6,11 +6,13 @@ import { TicTacToeComponent } from './tic-tac-toe/tic-tac-toe.component';
 
 import { TicTacToeService } from './services/tic-tac-toe.service';
 import { GameStorageService } from './services/game-storage.service';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TicTacToeComponent
+    TicTacToeComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule

@@ -1,12 +1,15 @@
+<!--<div >-->
 <ng-template [ngIf]="game.layer === 0 && game.victor === NoOne">
   <button class="cell-button"
           (click)="mark()"
+          [ngClass]="{canMove: canMark()}"
           style="width:100%;height:100%">
     {{ getPlayerSymbol(game.victor) }}
   </button>
 </ng-template>
 <ng-template [ngIf]="game.victor !== NoOne">
   <button class="cell-button"
+          [ngClass]="'victor'+game.victor"
           style="width:100%;height:100%">
     {{ getPlayerSymbol(game.victor) }}
   </button>
