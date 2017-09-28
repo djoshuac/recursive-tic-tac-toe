@@ -24,6 +24,7 @@ export class TicTacToeComponent implements OnInit {
     [6, 7, 8]
   ];
   NoOne: Player = Player.NoOne;
+  CatsEye: Player = Player.CatsEye;
 
   canMove: boolean;
 
@@ -49,6 +50,7 @@ export class TicTacToeComponent implements OnInit {
   getPlayerSymbol(player: Player): string {
     const playerSymbolMap = {};
     playerSymbolMap[Player.NoOne] = '-';
+    playerSymbolMap[Player.CatsEye] = '';
     playerSymbolMap[Player.First] = 'X';
     playerSymbolMap[Player.Second] = 'O';
 

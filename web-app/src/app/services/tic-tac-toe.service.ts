@@ -57,7 +57,14 @@ export class TicTacToeService {
       }
     }
 
-    return Player.NoOne;
+    for (let i = 0; i < this.cells.length; i++) {
+      const e = this.cells[i];
+      if (game.subgames[e].victor === Player.NoOne) {
+        return Player.NoOne;
+      }
+    }
+
+    return Player.CatsEye;
   }
 
   canMakeMove(game: Game, location: Array<Number>) {
