@@ -12,7 +12,7 @@ export class Game {
     this.nextMoveLocation = [];
     this.victor = Player.NoOne;
     this.turn = Player.First;
-    this.ticTacToe = new TicTacToeNode(2, 9);
+    this.ticTacToe = new TicTacToeNode(3, 9);
     this.canMoveSubscribers = [];
   }
 

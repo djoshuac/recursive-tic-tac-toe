@@ -1,3 +1,11 @@
+.game-layer3
+{
+  margin: auto;
+  max-width: 2170px;
+  min-width: 2170px;
+  height: 2170px;
+}
+
 .game-layer2
 {
   margin: auto;
@@ -16,12 +24,20 @@
 }
 
 /*bigger cells*/
+.layer3
+{
+  border: 6px solid rgb(50, 50, 50);
+  width: 100%;
+  min-width: 720px;
+  height: 720px;
+}
+
 .layer2
 {
-  border: 5px solid rgb(50, 50, 50);
+  border: 4px solid rgb(50, 50, 50);
   width: 100%;
-  min-width: 212px;
-  height: 212px;
+  min-width: 208px;
+  height: 208px;
 }
 
 /*Smaller cells*/
@@ -50,7 +66,7 @@ button
 /*Signify cell can be played in next*/
 button.canMove
 {
-  background-color: #BBCCFF;
+  background-color: #bbccff;
 }
 
 /*Change the color of the smaller cells when mouse is over them.*/
