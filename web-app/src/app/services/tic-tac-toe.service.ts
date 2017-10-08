@@ -33,7 +33,7 @@ export class TicTacToeService {
 
   constructor() {}
 
-  testWayToWin(game: TicTacToeNode, way): Player {
+  testWayToWin(game: TicTacToeNode, way: Array<number>): Player {
     const victor = game.getChildVictor(way[0]);
 
     for (let i  = 1; i < way.length; i++) {
@@ -47,6 +47,7 @@ export class TicTacToeService {
   }
 
   testForVictor(game: TicTacToeNode): Player {
+    // See if anyone has one the game
     for (let i = 0; i < this.waysToWin.length; i++) {
       const way = this.waysToWin[i];
 
@@ -57,6 +58,7 @@ export class TicTacToeService {
       }
     }
 
+    // See if any of the cells are left un-won
     for (let i = 0; i < this.cells.length; i++) {
       const e = this.cells[i];
       if (game.subgames[e].victor === Player.NoOne) {
@@ -64,6 +66,7 @@ export class TicTacToeService {
       }
     }
 
+    // All cells won, no overall game winner
     return Player.CatsEye;
   }
 

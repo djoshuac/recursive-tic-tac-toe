@@ -23,8 +23,7 @@ export class TicTacToeComponent implements OnInit {
     [3, 4, 5],
     [6, 7, 8]
   ];
-  NoOne: Player = Player.NoOne;
-  CatsEye: Player = Player.CatsEye;
+  Player = Player;
 
   canMove: boolean;
 
